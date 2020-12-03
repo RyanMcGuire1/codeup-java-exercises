@@ -6,12 +6,12 @@ public class ControlFlowExercises {
 //           i++;
 //       }
 
-       int two = 0;
+       int two = 100;
         do{
             System.out.println(two);
-            two+=2;
+            two -= 5;
         }
-        while(two <= 100);
+        while(two >= -10);
 
         }
     }
