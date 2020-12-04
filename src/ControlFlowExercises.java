@@ -16,9 +16,9 @@ public class ControlFlowExercises {
         //        }
         //        while(two <= 1000000L);
 
-//            for(long i = 2L; i <= 1000000; i *= i ){
-//            System.out.println(i);
-//            }
+            for(long i = 2L; i <= 1000000; i *= i ){
+            System.out.println(i);
+            }
         int i = 0;
         for (i = 0; i <= 100; i++) {
             if (i % 15 == 0) {
@@ -56,10 +56,32 @@ public class ControlFlowExercises {
                 }
             }while (userContinues);
 
-
+            boolean anotherGrade = true;
+            do {
+                System.out.print("Please enter a numerical grade from 0 tp 100");
+                int numericGrade = userInput.nextInt();
+                if(numericGrade >= 88){
+                    System.out.println("You made an A");
+                } else if(numericGrade >= 80) {
+                    System.out.println("You made a B");
+                } else if(numericGrade >= 67){
+                    System.out.println("You made a C");
+                } else if(numericGrade >= 60){
+                    System.out.println("You made a D");
+                } else {
+                    System.out.println("You made an F");
                 }
+                System.out.print("Do you wish to enter a new grade? (y/n)");
+                String userResponse = userInput.next();
+                if (!userResponse.equalsIgnoreCase("y")){
+                    anotherGrade = false;
+                }
+            } while (anotherGrade);
 
-            }
+
+        }
+
+    }
 
 
 
