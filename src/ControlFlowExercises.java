@@ -14,7 +14,7 @@ public class ControlFlowExercises {
 //        }
 //        while(two <= 1000000L);
 
-        for(int i = 100; i >= -10; i-= 5 ){
+        for(long i = 2L; i <= 1000000; i *= i ){
             System.out.println(i);
         }
 
