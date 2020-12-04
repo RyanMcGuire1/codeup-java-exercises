@@ -6,15 +6,15 @@ public class ControlFlowExercises {
 //           i++;
 //       }
 
-//       long two = 2;
+//       long two = 2L;
 ////       int squared = two * two;
 //        do{
 //            System.out.println(two);
 //            two *= two;
 //        }
-//        while(two <= 1000000);
+//        while(two <= 1000000L);
 
-        for(int i = 2; i <= 100; i+= 2 ){
+        for(int i = 100; i >= -10; i-= 5 ){
             System.out.println(i);
         }
 
