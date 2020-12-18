@@ -21,7 +21,7 @@ public class CircleApp {
 
         Circle circle1 = new Circle(radius1);
         System.out.println("Circumference: " + circle1.getCircumference());
-        System.out.println("are: " + circle1.getArea());
+        System.out.println("Area: " + circle1.getArea());
 
     }
 }
