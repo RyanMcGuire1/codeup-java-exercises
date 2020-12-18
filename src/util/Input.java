@@ -28,9 +28,12 @@ public class Input {
     }
 
     public int getInt(){
-        System.out.println("Please enter an integer");
-        int userInt = sc.nextInt();
-        return userInt;
+        try{
+            return Integer.valueOf(getString());
+        }catch (NumberFormatException e){
+            System.out.println("Please enter an int");
+            return getInt();
+        }
     }
     public int getInt(int min, int max ){
        int userInt = getInt();
@@ -47,8 +50,12 @@ public class Input {
 
     public double getDouble(){
         System.out.println("Please enter an double");
-        double userDouble = sc.nextDouble();
-        return userDouble;
+        try{
+            return Double.valueOf(getString());
+        }catch(NumberFormatException e){
+            System.out.println("Input must be a number!");
+            return getDouble();
+        }
     }
     public double getDouble(double min, double max ){
         double userDouble = getDouble();
