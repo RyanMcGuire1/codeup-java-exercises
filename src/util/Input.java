@@ -35,18 +35,17 @@ public class Input {
             return getInt();
         }
     }
-    public int getInt(int min, int max ){
-       int userInt = getInt();
-       if(userInt >= min && userInt <= max) {
-           System.out.println("You are within range");
-           return userInt;
-       }else{
-           System.out.println("you are not within range");
-           return getInt(min, max);
-       }
-
-
+    public int getInt(int min, int max, String prompt ){
+       int input;
+       do {
+           System.out.println(prompt);
+           input = this.sc.nextInt();
+       }while(input < min || input > max);
+       return input;
     }
+
+
+
 
     public double getDouble(){
         System.out.println("Please enter an double");
