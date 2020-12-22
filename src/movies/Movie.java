@@ -7,7 +7,7 @@ public class Movie {
 
     public Movie(String name, String category) {
         this.name = name;
-        category = category;
+        this.category = category;
     }
 
     public String getName() {
