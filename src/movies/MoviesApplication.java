@@ -27,6 +27,7 @@ public class MoviesApplication {
             case 0:
                 continueRunningApp = false;
                 endApp();
+                break;
             case 1:
                 viewAllMovies();
                 break;
@@ -47,7 +48,7 @@ public class MoviesApplication {
     }
 
     private void endApp() {
-        System.out.println("thanks for using this movie list application!");
+        System.out.println("Thanks for using this movie list application!");
         System.out.println("GOODBYE!");
     }
 
