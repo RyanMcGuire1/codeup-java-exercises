@@ -41,7 +41,7 @@ public class MoviesApplication {
                 viewMoviesByCategory("horror");
                 break;
             case 5:
-                viewMoviesByCategory("SciFi");
+                viewMoviesByCategory("scifi");
                 break;
         }
         return continueRunningApp;
