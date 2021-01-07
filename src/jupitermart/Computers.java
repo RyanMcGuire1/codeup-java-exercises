@@ -10,9 +10,11 @@ public class Computers extends Product {
 
 
     public boolean isLaptop() {
+
         return isLaptop;
     }
     public void setisLaptop(boolean laptop){
+
         this.isLaptop = laptop;
     }
 }

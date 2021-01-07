@@ -8,7 +8,7 @@ public class Bob {
         if(userInput.endsWith("?")){
             System.out.println("Sure");
         } else if(userInput.endsWith("!")){
-            System.out.println("WHoa, chill out!");
+            System.out.println("Whoa, chill out!");
         } else if(userInput.equalsIgnoreCase("")){
             System.out.println("Fine. Be that way!");
         } else{
